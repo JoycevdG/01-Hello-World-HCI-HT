@@ -10,12 +10,42 @@
   <body>
     <a-scene background="color: #333333">
       <a-box id="myBox"
-        width="3"
-        height="2"
+        width="5"
+        height="5"
         depth="1"
-        color="#BBAA33" 
+        color="#bca0dc" 
+        position="0 1.5 -10"
+        rotation="0 50 0"
+        scale="1.2 1.2 1.2"
         shadow>
       </a-box>
+      <a-plane id="myPlane"
+        width="100"
+        height="100"
+        depth="1"
+        position="0 -1.5 0"
+        color="#f96995"
+        rotation="-90 0 0">
+      </a-plane>
+      <a-torus-knot
+        color="#aaf0d1" 
+        position="0 0 -15"
+        arc="180" 
+        p="3" 
+        q="7" 
+        radius="10" 
+        radius-tubular="0.1">
+    </a-torus-knot>
+    <a-tetrahedron
+        position="0 6.2 -10"
+        rotation="-50 0 0"
+        color="#8cd3ff"
+        radius="2">
+    </a-tetrahedron>
+    <a-text
+        position="-1 2 -6"
+        value="Made by: Joyce">
+    </a-text>
     </a-scene>
   </body>
 </html>
